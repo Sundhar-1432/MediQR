@@ -19,6 +19,11 @@ from django.urls import path
 from medi_app import views
 
 urlpatterns = [
+     path(
+        'verify/<uuid:token>/',
+        views.verify_email,
+        name='verify_email'
+    ),
     path('register/', views.register, name='register'),
     path('save/', views.save, name='save'),
     path('admin/', admin.site.urls),

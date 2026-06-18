@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MediQR Email Verification</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f8f9fb;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                
+                <!-- Main Container -->
+                <table width="750" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e1e8f0;">
+                    
+                    <!-- Header Section -->
+                    <tr>
+                        <td style="padding: 20px 40px; border-bottom: 2px solid #2563eb;">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="left">
+                                        <div style="display: flex; align-items: center;">
+                                            <!-- MediQR Logo SVG -->
+                                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 10px;">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#2563eb"/>
+                                                <path d="M7 9h2.5l1.5 3 2-6 1.5 3H17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span style="font-size: 26px; font-weight: bold; color: #1e3a8a;">MediQR</span>
+                                        </div>
+                                    </td>
+                                    <td align="right">
+                                        <div style="border: 1px solid #cbd5e1; border-radius: 20px; padding: 6px 14px; font-size: 13px; color: #64748b; display: inline-block;">
+                                            <span style="color: #2563eb; margin-right: 4px;">🛡️</span> Secure & Trusted
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Hero Body (Light Blue Background) -->
+                    <tr>
+                        <td style="padding: 0 30px 30px 30px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f0f7ff; border-radius: 12px; margin-top: 30px;">
+                                <tr>
+                                    <!-- Left Side Text -->
+                                    <td width="55%" style="padding: 40px 0 40px 40px;" valign="top">
+                                        <h2 style="margin: 0; color: #1e293b; font-size: 22px;">Hi there,</h2>
+                                        <h1 style="margin: 5px 0 20px 0; color: #2563eb; font-size: 28px; font-weight: 700;">Verify your email address</h1>
+                                        
+                                        <p style="margin: 0; color: #4b5563; font-size: 15px; line-height: 1.6;">
+                                            Thank you for registering with MediQR.<br>
+                                            Please verify your email address to activate<br>
+                                            your account and access all features.
+                                        </p>
+
+                                        <div style="margin-top: 35px;">
+                                            <a href="{{ verification_link }}" style="background-color: #2563eb; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-weight: bold; font-size: 16px; display: inline-block;">
+                                                <span style="margin-right: 8px;">🛡️</span> Verify My Email Address
+                                            </a>
+                                        </div>
+                                    </td>
+
+                                    <!-- Right Side Letter Box Illustration -->
+                                    <td width="45%" align="center" valign="middle" style="padding-right: 20px;">
+                                        <!-- THE LETTER BOX / ENVELOPE SVG -->
+                                        <svg width="240" height="200" viewBox="0 0 240 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <!-- Background Blobs -->
+                                            <circle cx="160" cy="100" r="80" fill="#e0efff" fill-opacity="0.6"/>
+                                            <circle cx="80" cy="130" r="50" fill="#e0efff" fill-opacity="0.4"/>
+                                            
+                                            <!-- The Envelope Body -->
+                                            <path d="M40 140V70C40 64.4772 44.4772 60 50 60H190C195.523 60 200 64.4772 200 70V140C200 145.523 195.523 150 190 150H50C44.4772 150 40 145.523 40 140Z" fill="#3b82f6"/>
+                                            
+                                            <!-- The Paper Inside -->
+                                            <rect x="60" y="40" width="120" height="70" rx="4" fill="white" />
+                                            <rect x="75" y="55" width="90" height="4" rx="2" fill="#e2e8f0" />
+                                            <rect x="75" y="65" width="70" height="4" rx="2" fill="#e2e8f0" />
+                                            <!-- Green Check on Paper -->
+                                            <circle cx="120" cy="85" r="12" fill="#10b981" />
+                                            <path d="M115 85L118 88L125 81" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            
+                                            <!-- Envelope Front flaps -->
+                                            <path d="M40 70L120 115L200 70" stroke="#2563eb" stroke-width="2" />
+                                            <path d="M40 150L90 110" stroke="#2563eb" stroke-width="2" />
+                                            <path d="M200 150L150 110" stroke="#2563eb" stroke-width="2" />
+                                            
+                                            <!-- Paper Airplane -->
+                                            <path d="M190 30L230 15L215 55L205 35L190 30Z" fill="#3b82f6" />
+                                            <path d="M205 35L215 28" stroke="white" stroke-opacity="0.5" />
+                                        </svg>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Features Section -->
+                    <tr>
+                        <td style="padding: 15px;">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="33%" align="center">
+                                        <div style="width: 45px; height: 45px; background: #eff6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                                            <span style="color: #3b82f6; font-size: 20px;">🛡️</span>
+                                        </div>
+                                        <h4 style="margin: 0; color: #1e293b; font-size: 16px;">Secure</h4>
+                                        <p style="font-size: 13px; color: #64748b; margin-top: 5px; line-height: 1.4;">Your data is encrypted<br>and protected</p>
+                                    </td>
+                                    <td width="34%" align="center">
+                                        <div style="width: 45px; height: 45px; background: #f0fdf4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                                            <span style="color: #10b981; font-size: 20px;">👤</span>
+                                        </div>
+                                        <h4 style="margin: 0; color: #1e293b; font-size: 16px;">Personalized</h4>
+                                        <p style="font-size: 13px; color: #64748b; margin-top: 5px; line-height: 1.4;">Get a personalized<br>healthcare experience</p>
+                                    </td>
+                                    <td width="33%" align="center">
+                                        <div style="width: 45px; height: 45px; background: #faf5ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                                            <span style="color: #a855f7; font-size: 20px;">🕒</span>
+                                        </div>
+                                        <h4 style="margin: 0; color: #1e293b; font-size: 16px;">24/7 Access</h4>
+                                        <p style="font-size: 13px; color: #64748b; margin-top: 5px; line-height: 1.4;">Access your health<br>records anytime</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Didn't Create Account Box -->
+                    <tr>
+                        <td style="padding: 0 40px 40px 40px;">
+                            <table width="100%" cellpadding="15" cellspacing="0" style="background-color: #f0f7ff; border-radius: 10px;">
+                                <tr>
+                                    <td width="40" valign="top">
+                                        <div style="width: 24px; height: 24px; background-color: #2563eb; border-radius: 50%; color: white; text-align: center; font-weight: bold; line-height: 24px; font-size: 14px;">i</div>
+                                    </td>
+                                    <td>
+                                        <p style="margin: 0; font-weight: bold; color: #1e293b; font-size: 14px;">Didn't create an account?</p>
+                                        <p style="margin: 4px 0 0 0; color: #64748b; font-size: 13px;">If you didn't sign up for MediQR, you can safely ignore this email.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer Details -->
+                    <tr>
+                        <td style="padding: 0 40px 30px 40px;">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="left">
+                                        <p style="margin: 0; color: #64748b; font-size: 14px;">Best regards,</p>
+                                        <p style="margin: 5px 0 0 0; color: #1e293b; font-weight: bold; font-size: 14px;">The MediQR Team</p>
+                                        <p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 12px; font-style: italic;">Your Health, Our Priority.</p>
+                                    </td>
+                                    <td align="right">
+                                        <!-- Social Icons -->
+                                        <span style="display:inline-block; width:30px; height:30px; background:#3b5998; border-radius:50%; color:white; text-align:center; line-height:30px; font-size:12px; margin-left:5px;">f</span>
+                                        <span style="display:inline-block; width:30px; height:30px; background:#1da1f2; border-radius:50%; color:white; text-align:center; line-height:30px; font-size:12px; margin-left:5px;">t</span>
+                                        <span style="display:inline-block; width:30px; height:30px; background:#e1306c; border-radius:50%; color:white; text-align:center; line-height:30px; font-size:12px; margin-left:5px;">i</span>
+                                        <span style="display:inline-block; width:30px; height:30px; background:#0077b5; border-radius:50%; color:white; text-align:center; line-height:30px; font-size:12px; margin-left:5px;">in</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <!-- Bottom Copyright Area -->
+                <table width="750" cellpadding="20" cellspacing="0">
+                    <tr>
+                        <td align="center" style="color: #94a3b8; font-size: 12px; line-height: 1.8;">
+                            &copy; 2025 MediQR. All rights reserved.<br>
+                            123 Health Street, Chennai, Tamil Nadu 600001, India<br>
+                            <a href="#" style="color: #2563eb; text-decoration: none;">Privacy Policy</a> | 
+                            <a href="#" style="color: #2563eb; text-decoration: none;">Terms of Service</a> | 
+                            <a href="#" style="color: #2563eb; text-decoration: none;">Contact Us</a>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
